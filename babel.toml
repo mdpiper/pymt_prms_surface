@@ -22,5 +22,9 @@ github_username = "pymt-lab"
 package_author = "Community Surface Dynamics Modeling System"
 package_author_email = "csdms@colorado.edu"
 package_license = "MIT"
-summary = "PyMT plugin for the PRMS6 Surface component"
+summary = "PRMS6 surface water process component"
+
+[ci]
+python_version = ["3.8"]
+os = ["linux", "mac", "windows"]
 
