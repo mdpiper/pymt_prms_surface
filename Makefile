@@ -51,11 +51,11 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 pymt_prms_surface examples
+	flake8 pymt_prms_surface examples docs
 
 pretty:
 	find pymt_prms_surface -name '*.py' | xargs isort
-	black setup.py pymt_prms_surface examples/*.py
+	black setup.py pymt_prms_surface examples/*.py docs
 
 test: ## run tests quickly with the default Python
 	bmi-test pymt_prms_surface.bmi:PRMSSurface -vvv
