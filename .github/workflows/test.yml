@@ -19,7 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest, macos-latest]
         python-version: [3.8]
 
     steps:
@@ -53,4 +53,4 @@ jobs:
       - name: Test
         run: |
           python -c 'import pymt_prms_surface'
-          bmi-test pymt_prms_surface.bmi:PRMSSurface -vvv
+          #bmi-test pymt_prms_surface.bmi:PRMSSurface -vvv
